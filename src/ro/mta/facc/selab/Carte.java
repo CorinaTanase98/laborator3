@@ -2,7 +2,7 @@ package ro.mta.facc.selab;
 
 public class Carte implements Comparable<Carte>{
     private String titlu;
-    private int an_aparitie;
+    private int an_publicatie;
     private int nr_pag;
     private String autor;
 
@@ -17,12 +17,12 @@ public class Carte implements Comparable<Carte>{
 
     public Carte(String titlu, int an_aparitie, int nr_pag, String autor) {
         this.titlu = titlu;
-        this.an_aparitie = an_aparitie;
+        this.an_publicatie = an_aparitie;
         this.nr_pag = nr_pag;
         this.autor = autor;
     }
 
     @Override public String toString(){
-        return this.titlu + " " + this.autor + ", aparuta in " + this.an_aparitie;
+        return this.titlu + " " + this.autor + ", aparuta in " + this.an_publicatie;
     }
 }
